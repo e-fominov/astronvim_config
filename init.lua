@@ -91,20 +91,11 @@ local config = {
           require('rust-tools').setup({})
         end
       },
-      -- { "nvim-lua/plenary.nvim" },
-      -- { "mfussenegger/nvim-dap" },
       {
         "puremourning/vimspector",
       },
-      -- You can also add new plugins here as well:
-      -- { "andweeb/presence.nvim" },
-      -- {
-      --   "ray-x/lsp_signature.nvim",
-      --   event = "BufRead",
-      --   config = function()
-      --     require("lsp_signature").setup()
-      --   end,
-      -- },
+      -- Disable plugins
+      -- ["rebelot/heirline.nvim"] = { disable = true },
     },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
@@ -261,6 +252,13 @@ local config = {
     })
     local unmap = vim.api.nvim_del_keymap
     unmap("n", "<leader>d")
+
+    --local cmds = vim.nvim_get_autocmds({group = "Heirline", event = "User"})
+    --for c in cmds do
+    --  print("Delete autocmd with id=", c.id)
+    --  vim.nvim_del_autocmd(c.id)
+    --end
+
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
