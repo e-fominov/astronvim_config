@@ -1,4 +1,9 @@
 return {
+  plugins = {
+    "nvim-telescope/telescope.nvim",
+    enabled = false,
+
+  },
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use
