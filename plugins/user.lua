@@ -11,6 +11,7 @@ return {
             "%.tga",
             "venv/*",
             "target/*",
+	    "node_modules/*",
           },
         }),
       })
