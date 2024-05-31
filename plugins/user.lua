@@ -27,6 +27,19 @@ return {
   {
     "IndianBoy42/tree-sitter-just"
   },
+  -- {
+  --   "lsp",
+  --   opts = function(_, opts) 
+  --     return require("lspconfig").clangd.setup {
+  --       on_attach = on_attach,
+  --       -- capabilities = cmp_nvim_lsp.default_capabilities(),
+  --       cmd = {
+  --         "clangd",
+  --         "--offset-encoding=utf-16",
+  --       },
+  --     } 
+  --   end,
+  -- },
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",
